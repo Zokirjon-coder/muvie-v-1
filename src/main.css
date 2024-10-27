@@ -1,0 +1,42 @@
+/* .container {
+  position: relative;
+} */
+#dots-canvas {
+  position: absolute;
+  background: transparent;
+  inset: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+.bg-full {
+  position: absolute;
+  inset: 0;
+  /* pointer-events: none; */
+
+  .bg-dot {
+    position: absolute;
+    z-index: 1;
+
+    .bg-dot-near {
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      z-index: 1;
+      width: 4px;
+      height: 4px;
+      border-radius: 5px;
+      background: #f02354;
+    }
+    .bg-line {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      transform-origin: 0 0;
+      height: 1px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
